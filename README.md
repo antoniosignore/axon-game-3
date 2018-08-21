@@ -138,9 +138,7 @@ My intention was to model the information on the backend side until a player is 
 So I provided a bunch of CURL that can be executed which I think should provide a good grasp of the solution
 proposed and the awesomeness of AxonIQ
 
-CURL
-
-
+#CURL
 
 
 ### Create a game
