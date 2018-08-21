@@ -317,7 +317,6 @@ If we lookup againt the events happened in the past now we will find the creatio
     }
 
 
-
 # And Winner is: mickey
 
 
