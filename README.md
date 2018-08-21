@@ -154,35 +154,45 @@ proposed and the awesomeness of AxonIQ
 
 ### Response
 
-    [{"gameId":"my_game_id","name":"testgame","player1":"antonio","player2":null,"number":45}]
+    [{
+    	"gameId": "my_game_id",
+    	"name": "testgame",
+    	"player1": "antonio",
+    	"player2": null,
+    	"number": 45,
+    	"lastMovePlayer": "antonio",
+    	"winner": null
+    }]
 
 ### Get the events
+
+With this request we can query Axon Event source to return us the events in the db.
 
     curl --request GET  --url http://localhost:8080/events/my_game_id
     
 ### Response
     
     [{
-    	"type": "GameAggregate",
-    	"aggregateIdentifier": "my_game_id",
-    	"sequenceNumber": 0,
-    	"timestamp": {
-    		"nano": 191000000,
-    		"epochSecond": 1534825462
-    	},
-    	"identifier": "0f761a37-61fa-4658-9fb0-89562293a62e",
-    	"metaData": {
-    		"traceId": "92f8ab02-39ee-4a1d-af6f-82a9fb6ff16d",
-    		"correlationId": "92f8ab02-39ee-4a1d-af6f-82a9fb6ff16d"
-    	},
-    	"payload": {
-    		"gameId": "my_game_id",
-    		"name": "testgame",
-    		"player": "antonio",
-    		"number": 45
-    	},
-    	"payloadType": "io.axoniq.labs.game.coreapi.GameCreatedEvent"
-    }]
+        	"type": "GameAggregate",
+        	"aggregateIdentifier": "my_game_id",
+        	"sequenceNumber": 0,
+        	"timestamp": {
+        		"nano": 191000000,
+        		"epochSecond": 1534825462
+        	},
+        	"identifier": "0f761a37-61fa-4658-9fb0-89562293a62e",
+        	"metaData": {
+        		"traceId": "92f8ab02-39ee-4a1d-af6f-82a9fb6ff16d",
+        		"correlationId": "92f8ab02-39ee-4a1d-af6f-82a9fb6ff16d"
+        	},
+        	"payload": {
+        		"gameId": "my_game_id",
+        		"name": "testgame",
+        		"player": "antonio",
+        		"number": 45
+        	},
+        	"payloadType": "io.axoniq.labs.game.coreapi.GameCreatedEvent"
+        }]
 
 
 ### Get the participants
@@ -308,7 +318,7 @@ If we lookup againt the events happened in the past now we will find the creatio
 
 
 
-
+# And Winner is: mickey
 
 
 
