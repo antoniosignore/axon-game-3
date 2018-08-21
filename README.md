@@ -36,8 +36,32 @@ Open a terminal in the directory: axon-game-3 and import the project:
 
 In the Project window navigate to the directory:
 
-    /home/antonio/pippo/axon-game-3/game/src/main/java/io/axoniq/labs/game
+    axon-game-3/game/src/main/java/io/axoniq/labs/game
+
+
+Then run the database:
+
+    From IntelliJ Run the 'Server'
+    
+If correctly started you will see on console the message:
+
+    Database running on port 9092
+    Press any key to shut down
+
+Then start the Game Of Three backend:
+
+    GameOfThreeScalingOutApplication
 
 
 Solutions
 ---------
+
+The goal here is to demonstrate the possible implementation of the backend for the Game Of Three adopting
+an open source framework to build microservices adopting the DDD, CQRS and EventSourcing patterns.
+
+
+
+
+
+
+
