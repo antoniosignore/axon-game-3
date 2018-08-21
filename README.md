@@ -3,7 +3,7 @@
 The goal here is to demonstrate the possible implementation of the backend for the Game Of Three adopting
 an open source framework to build microservices adopting the DDD, CQRS and EventSourcing patterns.
 
-The framework is called Axon and it is mantained by the OpenIQ company: 
+The framework is called Axon and it is mantained by the AxonIQ company: 
 
     https://axoniq.io/ 
 
