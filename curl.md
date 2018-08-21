@@ -134,8 +134,7 @@ If we lookup againt the events happened in the past now we will find the creatio
     }]
     
     
-
-    @PostMapping("/games/{gameId}/numbers")  
+#### POST a winner number    
     
     curl --request POST  --url http://localhost:8080/games/my_game_id/numbers \
             --header 'content-type: application/json'  \
