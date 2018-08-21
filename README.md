@@ -18,6 +18,9 @@ may have an impact on the State of the aggregate and MUST think in terms of the 
 The framework then offers a rich set of Annotations that drive the developer towards the solution and most importantly
 developing starting with a MONOLITH. 
 
+As Martin Fowler wrote: most of the failures in microservices projects are projects
+where the developers started immediately in distributed fashion. Success is when teams started with a monolith and then as required partioned pieces of logic as needed along the project life. 
+
 Because Axos adopts the location transarency then it is only after that the business logic has been implemented
 that it is possible to fragment the monolith and deploy separately the command component and the query component.
 
