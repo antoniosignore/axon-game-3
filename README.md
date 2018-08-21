@@ -1,5 +1,50 @@
-Game of 3 Application
-============================
+# Game of 3 Test
+
+The goal here is to demonstrate the possible implementation of the backend for the Game Of Three adopting
+an open source framework to build microservices adopting the DDD, CQRS and EventSourcing patterns.
+
+The framework is called Axon and it is mantained by the OpenIQ company: 
+
+    https://axoniq.io/ 
+
+This is my first attempt to use Axon which I find an extremely interesting technology.
+
+Its main winning points is the approach that the devleloper needs to follow in order to arrive to a solution:
+
+The programmer must think in terms of the business model trying immediately to decide what is the Root Aggregate
+of the problem and then in Test First fashion MUST approach the problem in terms of Command that can be sent that
+may have an impact on the State of the aggregate and MUST think in terms of the events that MUST be generated.
+
+The framework then offers a rich set of Annotations that drive the developer towards the solution and most importantly
+developing starting with a MONOLITH. 
+
+Because Axos adopts the location transarency then it is only after that the business logic has been implemented
+that it is possible to fragment the monolith and deploy separately the command component and the query component.
+
+Also it offers a vast choice of technologies that can be used to implement the event sourcing/us (i.e. Kafka, ActiveMQ, RabbitMq)
+as well DataSources SQL and/or NO_Sql for the Query model projections and/or the validation side of the CommandModel
+
+
+# GAME of Three solution
+
+In this example, I have tried to keep the solution to the very minimal focusing on the DDD/CQRS aspects rather than 
+actually fullfilling the full game which is quite trivial and not really the real meat of the test.
+
+So I followed the Axon proposed approach:
+
+### AGGREGATE
+ 
+Decide what is the Root Aggregate: in this example it is clearly the Game and then attached to it the players, the current latest number and so on.
+  
+  The Aggregate is implemented inGameAggregate.java
+      
+### Command/Events as messages.  
+
+Define in one Kotlin  file the command and events that mode the state of the system:
+   
+    game/coreapi/message.kt 
+    
+
 
 
 ## Installation
@@ -56,8 +101,6 @@ Then start the Game Of Three backend:
 Solutions
 ---------
 
-The goal here is to demonstrate the possible implementation of the backend for the Game Of Three adopting
-an open source framework to build microservices adopting the DDD, CQRS and EventSourcing patterns.
 
 
 
