@@ -36,7 +36,12 @@ So I followed the Axon proposed approach:
  
 Decide what is the Root Aggregate: in this example it is clearly the Game and then attached to it the players, the current latest number and so on.
   
-  The Aggregate is implemented inGameAggregate.java
+The Aggregate is implemented in:
+    
+    GameAggregate.java
+
+This is a clear example of a Non-Anemic model implementation. 
+
       
 ### Command/Events as messages.  
 
@@ -44,6 +49,27 @@ Define in one Kotlin  file the command and events that mode the state of the sys
    
     game/coreapi/message.kt 
     
+Kotlin is particularly effective to provide in very concise way all the commands and events in the system.    
+    
+### Command and Query models
+
+    game/commandmodel
+    game/querymodel
+    
+### EventSourcing
+
+I adoped the default embedded EventSource provided by Axon to keep it simple
+    
+### TEST FIRST
+
+Axon provide test fictures that allow the user to write tests in given()/when()/expect() fashion which is
+formidable because allows the programmer to write the tests thinking about commands and events (or error) to 
+be expected.
+
+    test/jave/io/axoniq/labs/game/commandmodel/GameAggregateTest.java 
+
+
+
 
 
 
