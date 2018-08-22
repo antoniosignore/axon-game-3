@@ -9,7 +9,7 @@ The framework is called Axon and it is mantained by the AxonIQ company:
 
 This is my first attempt to use Axon which I find an extremely interesting technology.
 
-Its main winning points is the approach that the devleloper needs to follow in order to arrive to a solution:
+Its main winning point is the approach that the developer needs to follow in order to arrive to a solution:
 
 The programmer must think in terms of the business model trying immediately to decide what is the Root Aggregate
 of the problem and then in Test First fashion MUST approach the problem in terms of Command that can be sent that
@@ -18,8 +18,9 @@ may have an impact on the State of the aggregate and MUST think in terms of the 
 The framework then offers a rich set of Annotations that drive the developer towards the solution and most importantly
 developing starting with a MONOLITH. 
 
-As Martin Fowler wrote: most of the failures in microservices projects are projects
-where the developers started immediately in distributed fashion. Success is when teams started with a monolith and then as required partioned pieces of logic as needed along the project life. 
+As Martin Fowler wrote: most of the failures in microservices projects are projects where the developers started immediately in distributed fashion. 
+
+Success happens when teams started with a monolith and then as required partioned pieces of logic as needed along the project life. 
 
 Because Axos adopts the location transarency then it is only after that the business logic has been implemented
 that it is possible to fragment the monolith and deploy separately the command component and the query component.
