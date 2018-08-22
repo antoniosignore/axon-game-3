@@ -25,8 +25,7 @@ Success happens when teams started with a monolith and then as required partione
 Because Axos adopts the location transarency then it is only after that the business logic has been implemented
 that it is possible to fragment the monolith and deploy separately the command component and the query component.
 
-Also it offers a vast choice of technologies that can be used to implement the event sourcing/us (i.e. Kafka, ActiveMQ, RabbitMq)
-as well DataSources SQL and/or NO_Sql for the Query model projections and/or the validation side of the CommandModel
+Also it offers a vast choice of technologies that can be used to implement the event sourcing/us (i.e. Kafka, ActiveMQ, RabbitMq) as well DataSources SQL and/or NO_Sql for the Query model projections and/or the validation side of the CommandModel
 
 
 # GAME of Three solution
@@ -72,7 +71,6 @@ be expected.
 
     test/jave/io/axoniq/labs/game/commandmodel/GameAggregateTest.java 
 
-
 ## Installation
 This project requires JDK 8 and maven for building and testing it. 
 
@@ -93,7 +91,6 @@ This project contains the source code for the Game of 3 Axon test.
     cd axon-game-3
     mvn clean package
 
-
 ## How to run
 
 The app is composed of a remote H2 database which needs to be executed in standalone mode
@@ -108,7 +105,6 @@ Open a terminal in the directory: axon-game-3 and import the project:
 In the Project window navigate to the directory:
 
     axon-game-3/game/src/main/java/io/axoniq/labs/game
-
 
 Then run the database:
 
@@ -127,11 +123,11 @@ Then start the Game Of Three backend:
 How to play
 -----------
 
-I did not pay much attention on the actual details of the game. I preferred to spend time to exepriment with
+I did not pay much attention on the actual details of the game. I preferred to spend time to experiment with
 AXON (my first attempt to actually use it)  rather then spending time on a trivial game.
 
 However I tried to put a reasonable amount of checks in order to create a game by a player with an initial
-number, allow an other user to join ann added few checks on the numbers sent by them from an UI (that I did 
+number, allow an other user to join and added few checks on the numbers sent by them from an UI (that I did 
 not implement). 
 
 Also I did not pay much attention to the automatic mode or not. That would probably be also an UI side of
@@ -140,10 +136,9 @@ logic: in the UI the player will take his decision {-1, 0 +1} manually or automa
 My intention was to model the information on the backend side until a player is a winner.
 
 So I provided a bunch of CURL that can be executed which I think should provide a good grasp of the solution
-proposed and the awesomeness of AxonIQ
+proposed and the awesomeness of AxonIQ.
 
-#CURL
-
+# CURL
 
 ### Create a game
 
