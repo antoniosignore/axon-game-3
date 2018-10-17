@@ -21,7 +21,7 @@ Because Axos adopts the location transarency then it is only after that the busi
 
 Also it offers a vast choice of technologies that can be used to implement the event sourcing/us (i.e. Kafka, ActiveMQ, RabbitMq) as well DataSources SQL and/or NO_Sql for the Query model projections and/or the validation side of the CommandModel
 
-#GAME of Three solution
+# GAME of Three solution
 
 In this example, I have tried to keep the solution to the very minimal focusing on the DDD/CQRS aspects rather than actually fullfilling the full game which is quite trivial and not really the real meat of the test.
 
