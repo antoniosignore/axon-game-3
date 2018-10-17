@@ -4,7 +4,8 @@ The goal here is to demonstrate the possible implementation of the backend for t
 
 The framework is called Axon and it is mantained by the AxonIQ company:
 
-https://axoniq.io/ 
+	https://axoniq.io/ 
+
 This is my first attempt to use Axon which I find an extremely interesting technology.
 
 Its main winning point is the approach that the developer needs to follow in order to arrive to a solution:
@@ -93,7 +94,7 @@ Database running on port 9092
 Press any key to shut down
 Then start the Game Of Three backend:
 
-# GameOfThreeScalingOutApplication
+# GameOfThree
 
 ## How to play
 I did not pay much attention on the actual details of the game. I preferred to spend time to exepriment with AXON (my first attempt to actually use it) rather then spending time on a trivial game.
